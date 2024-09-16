@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Verificar Ajuda</title>
+    <script>
+        function verificarAjuda() {
+            var renda = parseFloat(document.getElementById("renda").value);
+            var rendaFamiliar = parseFloat(document.getElementById("rendaFamiliar").value);
+
+            if (renda <= 1050 && rendaFamiliar <= 2100) {
+                alert("Você terá direito!");
+            } else {
+                alert("Você NÃO terá direito");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Verificação de Ajuda Covid-19</h1>
+    <label for="renda">Renda individual:</label>
+    <input type="number" id="renda"><br><br>
+    
+    <label for="rendaFamiliar">Renda familiar:</label>
+    <input type="number" id="rendaFamiliar"><br><br>
+
+    <button onclick="verificarAjuda()">Verificar ajuda</button>
+</body>
+</html>
