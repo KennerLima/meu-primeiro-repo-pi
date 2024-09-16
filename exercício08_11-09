@@ -17,13 +17,13 @@
 </html>
 <script>
         function verificarBeneficio() {
-            const rendaIndividual = parseFloat(document.getElementById("rendaIndividual").value)
-            const rendaFamiliar = parseFloat(document.getElementById("rendaFamiliar").value);
+            const rendaIndividual = Number (input_renda_individual.value)
+            const rendaFamiliar = const rendaFamiliar = Number (input_renda_individual.value)
 
             if (rendaIndividual <= 2000 || rendaFamiliar <= 3000) {
-                alert("Você terá direito ao auxílio");
+                alert("Você terá direito ao auxílio")
             } else {
-                alert("Sem direito ao auxílio");
+                alert("Sem direito ao auxílio")
             }
         }
 </script>
