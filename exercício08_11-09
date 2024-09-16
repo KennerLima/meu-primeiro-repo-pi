@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ajuda Emergencial</title>
+  
+</head>
+<body>
+    <h1>Verificação de Benefício Emergencial</h1>
+    Informe a renda individual:
+    <input type="number" id="input_renda_individual"><br>
+
+    informe a renda familiar:
+    <input type="number" id="input_renda_familiar"><br>
+
+    <button onclick="verificarExibirBeneficio()">Terei o benefício?</button>
+</body>
+</html>
+<script>
+        function verificarBeneficio() {
+            const rendaIndividual = parseFloat(document.getElementById("rendaIndividual").value)
+            const rendaFamiliar = parseFloat(document.getElementById("rendaFamiliar").value);
+
+            if (rendaIndividual <= 2000 || rendaFamiliar <= 3000) {
+                alert("Você terá direito ao auxílio");
+            } else {
+                alert("Sem direito ao auxílio");
+            }
+        }
+</script>
