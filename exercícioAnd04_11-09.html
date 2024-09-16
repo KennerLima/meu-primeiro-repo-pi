@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Ver Recomendação Netflix</title>
-    <script>
+    
+</head>
+<body>
+    Informe o horário que costuma acessar (em horas):
+    <input type="number" id="input_horario">
+    <button onclick="verificarHorario()">Ver recomendação</button>
+</body>
+</html>
+<script>
         function verificarHorario() {
-            var horario = parseFloat(document.getElementById("horario").value);
+            const horario = Number(input_horario.value);
 
             if (horario >= 19 && horario <= 21) {
                 alert("Não é recomendável que você assista sua série favorita no horário " + horario + "h!");
@@ -12,12 +19,4 @@
                 alert("O horário " + horario + "h é adequado para assistir sua série favorita!");
             }
         }
-    </script>
-</head>
-<body>
-    <h1>Recomendação Netflix</h1>
-    <label for="horario">Informe o horário que costuma acessar (em horas):</label>
-    <input type="number" id="horario">
-    <button onclick="verificarHorario()">Ver recomendação</button>
-</body>
-</html>
+</script>
