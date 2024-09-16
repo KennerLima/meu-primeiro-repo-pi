@@ -1,10 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Avaliar Nota</title>
-    <script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    Informe a nota:
+    <input type="number" id="input_nota">
+    <button onclick="avaliarNota()">Avaliar aluno</button>
+</body>
+</html>
+<script>
         function avaliarNota() {
-            var nota = parseFloat(document.getElementById("nota").value);
+            var nota = Number(input_nota.value);
 
             if (nota >= 0 && nota <= 10) {
                 alert("Nota válida!");
@@ -12,12 +22,4 @@
                 alert("Onde já se viu nota menor que 0 e maior que 10?!");
             }
         }
-    </script>
-</head>
-<body>
-    <h1>Avaliação de Nota</h1>
-    <label for="nota">Informe a nota:</label>
-    <input type="number" id="nota">
-    <button onclick="avaliarNota()">Avaliar aluno</button>
-</body>
-</html>
+</script>
