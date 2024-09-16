@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Processo Seletivo</title>
-   
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-    <h1>Avaliação de Aprovação</h1>
-    Nota do ENEM:
-    <input type="number"id="input_enem"><br>
+informe a nota do ENEM:
+    <input type="number" id="input_enem"><br>
 
-    Nota do Vestibular Interno:
+    Informe a nota do Vestibular Interno:
     <input type="number" id="input_vestibular"><br>
 
     <button onclick="avaliarExibirAprovacao()">Avaliação</button>
 </body>
 </html>
- <script>
+<script>
         function avaliarExibirAprovacao() {
             const notaEnem = Number(input_enem.value)
             const notaVestibular = Number(input.vestibular.value)
@@ -26,4 +26,4 @@
                 alert("Tente semestre que vem!");
             }
         }
-    </script>
+</script>
