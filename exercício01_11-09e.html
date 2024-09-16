@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    Informe a temperatura atual:
+    <input type="number" id="input _temperatura">
+    <button onclick="verificarExibirTemperatura()">Ver situação</button>
+</body>
+</html>
+<script>
+        function verificarTemperatura() {
+            const temperatura = Number(input_temperatura.value)
+            if (temperatura >= 21 && temperatura <= 24) {
+                alert("Temperatura confortável")
+            } else {
+                alert("Temperatura DESCONFORTÁVEL")
+            }
+        }
+</script>
