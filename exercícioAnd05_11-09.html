@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Avaliar Aluno</title>
+    <script>
+        function avaliarAluno() {
+            var nota = parseFloat(document.getElementById("nota").value);
+
+            if (nota < 6) {
+                alert("Aluno não aprovado");
+            } else if (nota >= 8.5 && nota <= 10) {
+                alert("Aluno Exemplar!");
+            } else if (nota >= 6 && nota < 8.5) {
+                alert("Aluno comum e aprovado");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Avaliação de Aluno</h1>
+    <label for="nota">Informe a nota:</label>
+    <input type="number" id="nota">
+    <button onclick="avaliarAluno()">Avaliar aluno</button>
+</body>
+</html>
